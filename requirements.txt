@@ -1,0 +1,17 @@
+gunicorn===19.7.1
+python-dotenv
+flask
+flask-cors # optional
+
+pytest
+bumpversion
+pytest-sugar
+pytest-cov
+
+python_version
+
+pandas
+torch
+trnasformers
+sentencepiece
+sacremoses

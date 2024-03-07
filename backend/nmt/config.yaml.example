@@ -1,0 +1,25 @@
+nmt:
+  langCode:
+    - eng_Latn
+    - jpn_Jpa
+    # - zh
+    # - de
+models:
+  - name: en-ja
+    path: en-ja
+    description: "en to jp"
+    type: huggingface
+    lang: eng_Latn-jpn_Jpan
+    max-length: 512
+  - name: ja-en
+    path: ja-en
+    description: "jp to en"
+    type: huggingface
+    lang: jpn_Jpan-eng_Latn
+    max-length: 512
+  - name: nllb-600m
+    description: "facebook nllb model"
+    path: nllb
+    type: huggingface
+    lang: [eng_Latn-jpn_Jpan, jpn_Jpan-eng_Latn]
+    max-length: 512
