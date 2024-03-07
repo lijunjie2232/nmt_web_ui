@@ -20,10 +20,10 @@ from .util import timer, get_model, model_filter, get_avilable_device, choose_de
 
 # retune hale model information
 @app.route("/api/models-info.fuck", methods=["POST"])
-def model_info(name):
+def model_info():
     return app.config["MODELS_CONFIG"][
         ["name", "description", "max-length", "src", "tgt"]
-    ].to_json()
+    ].to_json(orient="records")
 
 
 # filter model with languages, not recommend to use this api
