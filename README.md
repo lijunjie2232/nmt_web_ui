@@ -20,7 +20,15 @@ cd ..
 ```
 
 ### サーバ（Pythonとモデル）の部分
-1. モデルファイルを [huggingface](https://huggingface.co/models?pipeline_tag=translation)からダウンロードして、[models](backend/nmt/models)にに入れおきます。モデルって例えば[facebookのnllb](https://huggingface.co/facebook/nllb-200-distilled-600M)、そしてほがの
+1. モデルファイルを [huggingface](https://huggingface.co/models?pipeline_tag=translation)からダウンロードして、[models](backend/nmt/models)にに入れおきます。モデルって例えば[facebookのnllb](https://huggingface.co/facebook/nllb-200-distilled-600M)、そしてほがのはいいです。
+```yaml
+# ディレクトリ構造:
+- backend
+  - nmt
+    - models
+      - xxx1（あたらしいディレクトリそしてモデルファイルはそこにある。）
+      - xxx2（あたらしいディレクトリそしてモデルファイルはそこにある。）
+```
 2. [config.yaml.example](backend/nmt/config.yaml.example)に参考して[config.yaml](backend/nmt/config.yaml)を編集します。
 3. run.pyを実行する。
 ```sh
